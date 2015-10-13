@@ -13,71 +13,71 @@
 #
 # Once you get that working, create a second version that uses as few instructions/lines as you can.
 #
-# (1..1000).each do |num|
-#   case
-#   when num % 3 == 0 && num % 5 == 0 && num % 7 == 0
-#       puts "SuperFizzBuzz"
-#   when num % 3 == 0 && num % 5 == 0
-#     puts "SuperFizz"
-#   when num % 5 == 7 && num % 7 == 0
-#     puts "SuperBuzz"
-#   when num % 3 == 0
-#     puts "Fizz"
-#   when num % 5 == 0
-#     puts "Buzz"
-#   when num % 7 == 0
-#     puts "Super"
+(1..1000).each do |num|
+  case
+  when num % 3 == 0 && num % 5 == 0 && num % 7 == 0
+    puts "SuperFizzBuzz"
+  when num % 3 == 0 && num % 5 == 0
+    puts "SuperFizz"
+  when num % 5 == 7 && num % 7 == 0
+    puts "SuperBuzz"
+  when num % 3 == 0
+    puts "Fizz"
+  when num % 5 == 0
+    puts "Buzz"
+  when num % 7 == 0
+    puts "Super"
+  else
+    puts num
+  end
+end
+
+# def sfb(num)
+#   if num % 3 == 0 && num % 5 == 0 && num % 7 == 0
+#     "SuperFizzBuzz"
 #   else
-#     puts num
+#     num
 #   end
 # end
-
-def sfb(num)
-  if num % 3 == 0 && num % 5 == 0 && num % 7 == 0
-    "SuperFizzBuzz"
-  else
-    num
-  end
-end
-
-def sf(num)
-  if num % 3 == 0 && num % 5 == 0
-    "SuperFizz"
-  else
-    num
-  end
-end
-
-def sb(num)
-  if num % 5 == 7 && num % 7 == 0
-    "SuperBuzz"
-  else
-    num
-  end
-end
-
-def fizz(num)
-  if num % 3 == 0
-    "Fizz"
-  else
-    num
-  end
-end
-
-def buzz(num)
-  if num % 5 == 0
-    "Buzz"
-  else
-    num
-  end
-end
-
-def sooper(num)
-  if num % 7 == 0
-    "Super"
-  else
-    num
-  end
-end
-
-(1..1000).each { |num| puts sooper(buzz(fizz(sb(sf(sfb(num)))))) }
+#
+# def sf(num)
+#   if num % 3 == 0 && num % 5 == 0
+#     "SuperFizz"
+#   else
+#     num
+#   end
+# end
+#
+# def sb(num)
+#   if num % 5 == 0 && num % 7 == 0
+#     "SuperBuzz"
+#   else
+#     num
+#   end
+# end
+#
+# def fizz(num)
+#   if num % 3 == 0
+#     "Fizz"
+#   else
+#     num
+#   end
+# end
+#
+# def buzz(num)
+#   if num % 5 == 0
+#     "Buzz"
+#   else
+#     num
+#   end
+# end
+#
+# def sooper(num)
+#   if num % 7 == 0
+#     "Super"
+#   else
+#     num
+#   end
+# end
+#
+# (1..1000).each { |num| puts sooper(buzz(fizz(sb(sf(sfb(num)))))) }
